@@ -4,7 +4,7 @@ import {Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import axios from 'axios';
 
 function App() {
-    const baseUrl = "http://localhost:80/apiFrameworks/api/";
+    const baseUrl = "http://localhost:80/NewApiF02/api/";
     const [data, setData] = useState([]);
     const [modalInsertar, setModalInsertar] = useState(false);
     const [modalEditar, setModalEditar] = useState(false);
