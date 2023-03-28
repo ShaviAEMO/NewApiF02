@@ -13,26 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 /**
- * Register
+ * index
  */
 
-Route::post('/api/register', [\App\Http\Controllers\UserController::class,'register']);
-
-/**
- * login
- */
-
-Route::post('/api/login', [\App\Http\Controllers\UserController::class,'login']);
-
-/**
- * CarController
- */
-
-Route::resource('/api/car',\App\Http\Controllers\CarController::class);
+Route::get('/', [\App\Http\Controllers\PostController::class,'index']);
 
 
